@@ -1,36 +1,23 @@
-class Student {
-    String name;
-    int age;
-    int marks;
-
-    Student(String name, int age, int marks) {
-        this.name = name;
-        this.age = age;
-        this.marks = marks;
-    }
-
-    void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Marks: " + marks);
-        System.out.println("---------------------");
-    }
-}
-
-public class StudentInfo {
+public class StudentInfo{
     public static void main(String[] args) {
+        String name1 = "Alice";
+        int age1 = 20;
+        double marks1 = 85;
 
-        Student s1 = new Student("Rahul", 20, 85);
-        Student s2 = new Student("Anjali", 21, 90);
-        Student s3 = new Student("Kiran", 19, 80);
+        String name2 = "Bob";
+        int age2 = 21;
+        double marks2 = 90;
 
-        s1.display();
-        s2.display();
-        s3.display();
+        String name3 = "Charlie";
+        int age3 = 22;
+        double marks3 = 75;
 
-        int totalMarks = s1.marks + s2.marks + s3.marks;
-        double average = totalMarks / 3.0;
+        double average = (marks1 + marks2 + marks3) / 3;
 
-        System.out.println("Average Marks of Students: " + average);
+        System.out.println(name1 + " " + age1 + " " + marks1);
+        System.out.println(name2 + " " + age2 + " " + marks2);
+        System.out.println(name3 + " " + age3 + " " + marks3);
+
+        System.out.println("Average Marks: " + average);
     }
 }

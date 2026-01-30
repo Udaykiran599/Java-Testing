@@ -1,18 +1,14 @@
 public class NestedIfElse {
-    public static void main(String[] args) {
-        int age=30;
+    public static void main(String[] args){
+        int age=24;
         int salary=25000;
-
-        if(age>=21){
-            if(salary>20000){
-                System.out.println("Loan approved");
-            }
-            else{
-                System.out.println("Loan cannot be approved");
+        if(age>=20) {
+            if (salary >= 20000) {
+                System.out.println("Eligible for Loan");
             }
         }
-        else{
-            System.out.println("age and salary not upto requirment");
+        else {
+            System.out.println("Not eligible for loan");
         }
     }
 }
